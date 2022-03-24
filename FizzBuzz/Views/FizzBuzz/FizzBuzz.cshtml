@@ -1,0 +1,19 @@
+﻿@model FizzBuzzEvaluatorModel
+
+<table>
+    <thead>
+        <tr>
+            <th>Input</th>
+            <th>Evaluated</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.FizzBuzz)
+        {
+            <tr>
+                <td>@item.Input</td>
+                <td>@item.Output</td>
+            </tr>
+        }
+    </tbody>
+</table>
